@@ -1,0 +1,58 @@
+html{
+    background-image: linear-gradient(to right ,rgb(182, 7, 216) ,rgb(253, 114, 244),rgb(161, 93, 159));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header{
+    width:30%;
+    margin: auto;
+    background-color: rgb(239, 233, 241);
+    border-radius: 15%;
+    padding: 1rem;
+    margin-top: 5rem;
+    z-index: 100000000;
+}
+
+header div{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+button{
+    width: 3rem;
+    border:2px solid blueviolet;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 9%;
+    z-index: 100;
+}
+
+button:hover{
+    filter: brightness(90%);
+}
+
+@media only screen and (max-width: 768px){
+
+    header{
+        width:90%;
+        margin-top: 10rem;
+    }
+    .img{
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+.img{
+    width: 50%;
+    position: relative;
+    top: 80%; 
+    left: 50%; 
+    z-index: -1;
+}
+.img img{
+    width: 15rem;
+    margin: auto;
+    display: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/47122eae27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Coloring</title>
+</head>
+<body>
+    <section class="main">
+        <div class="mainDiv">
+            <div class="waviy">
+                <span style="--i:1">C</span>
+                <span style="--i:2">o</span>
+                <span style="--i:3">l</span>
+                <span style="--i:4">o</span>
+                <span style="--i:5">r</span>
+                <span style="--i:6">i</span>
+                <span style="--i:7">n</span>
+                <span style="--i:8">g</span>
+               </div>
+
+            <div class="contents">
+                <label for="red">Red</label>
+                <div class="slider">
+                    <span>0</span>
+                    <input type="range" id="red" value="0" min="0" max="255">
+                    <span>255</span>
+                    
+                </div>
+                <p>value = <span id="redf"></span></p>
+                
+            </div>
+            
+            <div class="contents">
+                <label for="green">Green</label>
+                <div class="slider">
+                    <span>0</span>
+                    <input type="range" id="green" value="0" min="0" max="255">
+                    <span>255</span>
+                   
+                </div>
+                <p>value = <span id="greenf"></span></p>
+            </div>
+            
+            <div class="contents">
+                <label for="blue">Blue</label>
+                <div class="slider">
+                    <span>0</span>
+                    <input type="range" id="blue" value="0" min="0" max="255">
+                    <span>255</span>
+                    
+                </div>
+                <p>value = <span id="bluef"></span></p>
+                
+            </div>
+
+            <div class="result">
+                <h3><i class="fas fa-lightbulb"></i> Result : </h3>
+                <div id="finalColor"></div>
+            </div>
+
+            <div class="back">
+                <label for="back">Activate background </label>
+                <input type="checkbox" id="back" value="1">
+            </div>
+            
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

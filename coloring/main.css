@@ -1,0 +1,142 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.main{
+    width: 100%;
+    margin-top: 10%;
+}
+
+.main .mainDiv{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    padding: 2.2rem 1.5rem;
+    border-radius: 10%;
+    background-image:linear-gradient(#7D9FBB,#568bb3,#1a537b);
+}
+
+
+.contents{
+    justify-items: space-between;
+    margin: 2px;
+    display: flex;
+justify-content: space-between;
+}
+
+.contents label{
+    font-size: 1.5rem;
+    color: azure;
+    margin-right: 35px;
+    font-weight: bold;
+    width: 10px;
+}
+
+.back{
+    float: right;
+}
+
+.contents input{
+    width: 300px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.contents p{
+    width: 5.5rem;
+    font-size: 1rem;
+    color: azure;
+    font-weight: bold;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+#finalColor{
+    width: 82px;
+    height: 50px;
+    border-radius: 30%;
+    box-shadow: 2px 1px 1px #1d1e1f;
+    margin-left: 5px;
+}
+
+
+
+.waviy {
+    font-size: 40px;
+   margin-bottom: 1.5rem;
+   text-align: center;
+  }
+  
+
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    display: inline-block;
+    color: azure;
+    animation: waviy 2.5s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+    
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0);
+      color:aqua;
+    }
+    20% {
+      transform: translateY(-20px);
+      color: aquamarine;
+    }
+  }
+
+  @media screen and (max-width: 992px){
+    .main{
+        width:100%;
+        margin-top: 30%;
+    }
+    .main .mainDiv{
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+        border-radius: 10%;
+    }
+    .contents input{
+        width: 100px;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+    
+.contents{
+    justify-items: space-between;
+    margin: 0.5px;
+    display: flex;
+justify-content: space-between;
+}
+
+.contents label{
+    font-size: 0.8rem;
+    color: azure;
+    margin-right: 5px;
+    font-weight: bold;
+    width: 5px;
+}
+.waviy {
+    font-size: 30px;
+   margin-bottom: 1.5rem;
+   text-align: center;
+  }
+  #finalColor{
+    width: 50px;
+    height: 40px;
+    border-radius: 30%;
+    box-shadow: 2px 1px 1px #1d1e1f;
+    margin-left: 3px;
+}
+}
