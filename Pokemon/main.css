@@ -1,0 +1,238 @@
+
+body{
+    margin:0%;
+    padding:0%;
+    height: 100vh;
+}
+body::-webkit-scrollbar {
+    width: 0.3em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #FFB30B;
+    outline: 0.5px solid #FFB30B;
+  }
+header{
+    background-image: linear-gradient(#FFB30B,#F36A3E);
+    background-repeat: no-repeat;
+    height: 50%;
+    position: relative;
+}
+
+.container{
+    width: 80%;
+    padding-top: 2rem!important;
+    margin:auto;
+    text-align: center;
+}
+.container #pokemonName{
+    /* border: none;
+    padding: 2px;
+    border-radius: 20%;
+    width: 250px;
+    height: 40px; */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 5px auto;
+    padding: 1rem 1.4rem;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 22%;
+    /* display: block; */
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+
+.btn {
+  backface-visibility: hidden;
+  background-color: #F36A3E;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: #FFB30B 0 0 0 1px inset,#c68803 0 2px 5px 0,#fbb110 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin-left: 12px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  width: 100px;
+}
+
+.btn:focus {
+  box-shadow: rgba(93, 88, 50, 0.1) 0 0 0 1px inset, rgba(93, 84, 50, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(211, 157, 50, 0.3) 0 0 0 4px;
+}
+
+.btn:hover{
+    background-color: #eee;
+    color: #F36A3E;
+}
+
+.btn-gthelp{
+    backface-visibility: hidden;
+  background-color:#fbb110;
+  border-radius: 6px;
+  box-shadow: #ffdb8e 0 0 0 1px inset,#c68803 0 2px 5px 0,#fbb110 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 34px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 15px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+
+/* #pokeImg{
+    display: none;
+    width: 90%;
+} */
+/* .showcase{
+    width: 33%;
+    position: absolute;
+    top: 30%;
+    left:60%;
+} */
+.showcase{
+    /* width: 33%; */
+    position: absolute;
+    top: 35%;
+    left:25%;
+}
+
+.show-container{
+    display: inline-flex;
+}
+
+.img-container{
+    overflow: hidden;
+    padding: 1rem;
+    width: 300px;
+    height: 290px;
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 2px 2px -2px #cccae4;
+    background-color: #fbedc4;
+    margin: 0px 55px;
+    text-align: center;
+}
+
+
+.img-container img{
+    width: 100%;
+    height: 90%;
+    display: none;
+}
+/* header .wave{
+position: absolute;
+width: 100%;
+bottom: -180px;
+display: block;
+height: 50%;
+} */
+
+/*WAVE*/
+/*viewBox in the SVG element basically determines the width and height of the SVG as a whole. For the path, we first have an M command in the position 0,100. Basically, we are moving to the coordinate 0,100. 100 means 100 px down the y-axis.*/
+
+select {
+
+    /* styling */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 5px auto;
+    padding: 0.9rem 1.2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 25%;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+    /* reset */
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none;
+}
+
+select:focus{
+    border: none;
+    outline: none;
+    box-shadow: #ffdb8e 0 0 0 1px inset,#c68803 0 2px 5px 0,#fbb110 0 1px 1px 0;
+}
+
+.alert-msg{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 992px){
+    .showcase{
+        position: absolute;
+        top: 25%;
+        left:25%;
+    }
+    .img-container{
+        overflow: hidden;
+        padding: 1rem;
+        width: 200px;
+        height: 190px;
+        border-radius: 10%;
+        text-align: center;
+        box-shadow: 2px 2px -2px #cccae4;
+        background-color: #fbedc4;
+        margin: 30px 0px;
+        text-align: center;
+    }
+    .show-container{
+        display: block;
+    }
+    .container #pokemonName{
+        font-size: 1rem;
+        margin: 5px auto;
+        padding: 0.5rem 1rem;
+        width: 55%;
+        border-bottom: 0.3rem solid transparent;
+        transition: all 0.3s;
+        display: block;
+    }
+    select {
+
+        /* styling */
+        font-size: 1rem;
+        margin: 5px auto;
+        padding: 0.5rem 1rem;
+        width: 55%;
+        border-bottom: 0.3rem solid transparent;
+        transition: all 0.3s;
+        display: none;
+      }
+
+}
